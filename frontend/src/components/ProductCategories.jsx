@@ -1,11 +1,52 @@
-import React from 'react';
-import { Package } from 'lucide-react';
+import React, { useState } from 'react';
+import { ChevronLeft, ChevronRight, Package } from 'lucide-react';
 import { Card, CardContent } from './ui/card';
 import { productCategories } from '../data/mockData';
 import { useNavigate } from 'react-router-dom';
 
 export const ProductCategories = () => {
   const navigate = useNavigate();
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const activeCategory = productCategories[activeIndex];
+
+  const showPrevious = () => {
+    setActiveIndex((currentIndex) => (
+      currentIndex === 0 ? productCategories.length - 1 : currentIndex - 1
+    ));
+  };
+
+  const showNext = () => {
+    setActiveIndex((currentIndex) => (
+      currentIndex === productCategories.length - 1 ? 0 : currentIndex + 1
+    ));
+  };
+
+  const renderCategoryCard = (category) => (
+    <Card
+      key={category.id}
+      className="group hover:shadow-lg transition-all duration-300 border border-brand-line shadow-sm overflow-hidden cursor-pointer bg-white"
+      onClick={() => navigate(`/products/${category.slug}`)}
+    >
+      <div className="relative h-56 overflow-hidden bg-brand-muted">
+        <img
+          src={category.image}
+          alt={category.name}
+          loading="lazy"
+          decoding="async"
+          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+        />
+      </div>
+      <CardContent className="p-6">
+        <h3 className="text-xl font-bold text-brand-blue mb-2">{category.name}</h3>
+        <p className="text-brand-grey mb-4 leading-relaxed text-sm">{category.description}</p>
+        <span className="text-brand-blue font-semibold inline-flex items-center">
+          View Products
+          <span className="ml-2">→</span>
+        </span>
+      </CardContent>
+    </Card>
+  );
 
   return (
     <section id="products" className="py-20 bg-white">
@@ -23,32 +64,42 @@ export const ProductCategories = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {productCategories.map((category) => (
-            <Card
-              key={category.id}
-              className="group hover:shadow-lg transition-all duration-300 border border-brand-line shadow-sm overflow-hidden cursor-pointer bg-white"
-              onClick={() => navigate(`/products/${category.slug}`)}
+        <div className="md:hidden">
+          <div className="relative px-8">
+            {renderCategoryCard(activeCategory)}
+            <button
+              type="button"
+              aria-label="Previous product category"
+              onClick={showPrevious}
+              className="absolute left-0 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white border border-brand-line text-brand-blue shadow-md flex items-center justify-center hover:bg-brand-sky transition-colors"
             >
-              <div className="relative h-56 overflow-hidden bg-brand-muted">
-                <img
-                  src={category.image}
-                  alt={category.name}
-                  loading="lazy"
-                  decoding="async"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-              </div>
-              <CardContent className="p-6">
-                <h3 className="text-xl font-bold text-brand-blue mb-2">{category.name}</h3>
-                <p className="text-brand-grey mb-4 leading-relaxed text-sm">{category.description}</p>
-                <span className="text-brand-blue font-semibold inline-flex items-center">
-                  View Products
-                  <span className="ml-2">→</span>
-                </span>
-              </CardContent>
-            </Card>
-          ))}
+              <ChevronLeft size={20} />
+            </button>
+            <button
+              type="button"
+              aria-label="Next product category"
+              onClick={showNext}
+              className="absolute right-0 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white border border-brand-line text-brand-blue shadow-md flex items-center justify-center hover:bg-brand-sky transition-colors"
+            >
+              <ChevronRight size={20} />
+            </button>
+          </div>
+          <div className="flex justify-center gap-2 mt-5" aria-label="Product categories">
+            {productCategories.map((category, index) => (
+              <button
+                key={category.id}
+                type="button"
+                aria-label={`Show ${category.name}`}
+                aria-current={index === activeIndex ? 'true' : undefined}
+                onClick={() => setActiveIndex(index)}
+                className={`h-2 rounded-full transition-all ${index === activeIndex ? 'w-6 bg-brand-blue' : 'w-2 bg-brand-line'}`}
+              />
+            ))}
+          </div>
+        </div>
+
+        <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {productCategories.map(renderCategoryCard)}
         </div>
 
         <div className="text-center mt-12">

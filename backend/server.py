@@ -115,7 +115,7 @@ async def submit_contact_form(contact: ContactRequest):
             <style>
                 body {{ font-family: Arial, sans-serif; line-height: 1.6; color: #333; }}
                 .container {{ max-width: 600px; margin: 0 auto; padding: 20px; }}
-                .header {{ background: linear-gradient(135deg, #ea580c 0%, #c2410c 100%); color: white; padding: 30px; text-align: center; border-radius: 10px 10px 0 0; }}
+                .header {{ background: linear-gradient(135deg, #2872af 0%, #2872af 100%); color: white; padding: 30px; text-align: center; border-radius: 10px 10px 0 0; }}
                 .logo {{ font-size: 28px; font-weight: bold; margin: 0; }}
                 .subtitle {{ margin: 5px 0 0 0; opacity: 0.9; font-size: 14px; }}
                 .content {{ background: #f9fafb; padding: 30px; border-radius: 0 0 10px 10px; }}

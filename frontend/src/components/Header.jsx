@@ -59,7 +59,7 @@ export const Header = () => {
         </div>
       </div>
 
-      <header className={`sticky top-0 z-50 transition-all duration-300 bg-white ${isScrolled ? 'shadow-sm border-b border-brand-line' : ''}`}>
+      <header className={`sticky top-0 z-50 transition-all duration-300 bg-white shadow-[0_4px_12px_rgba(15,23,42,0.12)] lg:shadow-none ${isScrolled ? 'border-b border-brand-line' : ''}`}>
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-20">
             <a
