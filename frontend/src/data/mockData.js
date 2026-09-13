@@ -37,10 +37,8 @@ export const companyInfo = {
 };
 
 export const customers = [
-  { name: "V Sole Private Limited", domain: "vsole.in" },
   { name: "Cathode Power Pvt. Ltd", domain: "cathodepower.com" },
   { name: "PV Blink Technologies Pvt Ltd.", domain: "pvblink.com" },
-  { name: "Horizon E-Peripherals Private Ltd.", domain: "horizoneperipherals.com" },
   { name: "G-Tek Solutions Pvt. Ltd.", domain: "gteksolutions.com" },
   { name: "Electrify Energy Private Ltd.", domain: "electrifyenergy.com" },
   { name: "Mefron Technologies India Pvt. Ltd", domain: "mefron.com" },
@@ -49,12 +47,10 @@ export const customers = [
   { name: "Access Private Ltd", domain: "accessindia.com" },
   { name: "Everest Instrument", domain: "everestinstrument.com" },
   { name: "Proactive Health", domain: "proactivehealth.in" },
-  { name: "Sarjan Water Tank", domain: "sarjanwatertank.com" },
   { name: "Kapsun Resources", domain: "kapsun.com" },
   { name: "Cimcon Software", domain: "cimconlighting.com" },
   { name: "Cimcon Digital", domain: "cimcondigital.com" },
   { name: "Mantra Softech India Pvt. Ltd", domain: "mantrasoftech.com" },
-  { name: "Prompt Equipments", domain: "promptequipments.com" },
   { name: "Varni Digital", domain: "varnidigital.com" },
   { name: "Janyutech", domain: "janyutech.com" }
 ];
@@ -84,30 +80,30 @@ export const productCategories = [
     image: "/images/equipment-cables.jpg",
     slug: "cable-assemblies"
   },
-  {
-    id: 4,
-    name: "Male & Female Connectors",
-    description:
-      "JST, Molex, AMP/Tyco, Dupont, Micro-Fit, Mini-Fit Jr., USB, RJ45, MC4 and more — male and female options.",
-    image: "/images/male-female-connectors.jpg",
-    slug: "male-female-connectors"
-  },
-  {
-    id: 5,
-    name: "Circular Connectors",
-    description:
-      "M8, M12, M16, M23, 7/8\", GX, aviation, waterproof IP67/IP68, panel mount, right-angle and in-line connectors.",
-    image: "/images/circular-connectors.jpg",
-    slug: "circular-connectors"
-  },
-  {
-    id: 6,
-    name: "Specialized Connectors",
-    description:
-      "Communication, RS485, IDC with FRC, AC/DC and 3-way strip connectors, plus customized solutions.",
-    image: "/images/male-female-connectors.jpg",
-    slug: "specialized-connectors"
-  },
+  // {
+  //   id: 4,
+  //   name: "Male & Female Connectors",
+  //   description:
+  //     "JST, Molex, AMP/Tyco, Dupont, Micro-Fit, Mini-Fit Jr., USB, RJ45, MC4 and more — male and female options.",
+  //   image: "/images/male-female-connectors.jpg",
+  //   slug: "male-female-connectors"
+  // },
+  // {
+  //   id: 5,
+  //   name: "Circular Connectors",
+  //   description:
+  //     "M8, M12, M16, M23, 7/8\", GX, aviation, waterproof IP67/IP68, panel mount, right-angle and in-line connectors.",
+  //   image: "/images/circular-connectors.jpg",
+  //   slug: "circular-connectors"
+  // },
+  // {
+  //   id: 6,
+  //   name: "Specialized Connectors",
+  //   description:
+  //     "Communication, RS485, IDC with FRC, AC/DC and 3-way strip connectors, plus customized solutions.",
+  //   image: "/images/male-female-connectors.jpg",
+  //   slug: "specialized-connectors"
+  // },
   {
     id: 7,
     name: "Injection Moulding",

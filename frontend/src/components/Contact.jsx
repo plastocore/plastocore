@@ -144,10 +144,10 @@ export const Contact = () => {
                     <Phone size={22} />
                   </div>
                   <div>
-                    <p className="font-medium text-brand-blue mb-1">Sales Enquiries</p>
+                    <p className="font-medium text-brand-blue mb-1">Sales & Technical Enquiries</p>
                     <a href={`tel:${companyInfo.phone.replace(/\s/g, '')}`} className="text-sm text-brand-grey hover:text-brand-blue block">{companyInfo.phone}</a>
                     <a href={`tel:${companyInfo.phoneSecondary.replace(/\s/g, '')}`} className="text-sm text-brand-grey hover:text-brand-blue block">{companyInfo.phoneSecondary}</a>
-                    <p className="text-xs text-brand-grey mt-2">Technical / proprietor: {companyInfo.proprietorPhone}</p>
+                    <p className="text-xs text-brand-grey mt-2">Proprietor: {companyInfo.proprietorPhone}</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">

@@ -32,10 +32,10 @@ export const Hero = () => {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-brand-blue mb-6 leading-tight">
               {companyInfo.tagline}
             </h1>
-            <p className="text-lg md:text-xl text-brand-grey mb-4 leading-relaxed font-medium">
+            <p className="text-lg text-black mb-4 leading-relaxed ">
               {companyInfo.subtagline}
             </p>
-            <p className="text-base md:text-lg text-brand-grey mb-8 leading-relaxed max-w-xl">
+            <p className="text-base md:text-lg text-black mb-8 leading-relaxed max-w-xl">
               Plastocore delivers reliable engineering and manufacturing solutions for wire harnessing, cable assemblies, connectorization and precision injection moulded components. We support OEMs and industrial customers with dependable solutions built for real-world applications.
             </p>
 
@@ -43,7 +43,7 @@ export const Hero = () => {
               {['Wire Harnesses', 'Cable Assemblies', 'Connectorization', 'Precision Injection Moulding'].map((point) => (
                 <div key={point} className="flex items-center gap-3 text-brand-grey">
                   <CheckCircle2 className="text-brand-blue flex-shrink-0" size={20} />
-                  <span className="font-medium">{point}</span>
+                  <span className="font-medium text-black">{point}</span>
                 </div>
               ))}
             </div>

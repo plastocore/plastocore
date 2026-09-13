@@ -43,19 +43,19 @@ export const Header = () => {
 
   return (
     <>
-      <div className="bg-white border-b border-brand-line py-2 px-4 text-sm text-brand-grey" style={{backgroundColor: "rgb(244 245 246 / var(--tw-bg-opacity, 1))"}}>
+      <div className="bg-white border-b border-brand-line py-2 px-4 text-sm text-brand-grey" style={{backgroundColor: "rgb(40 114 175 / var(--tw-text-opacity, 1))"}}>
         <div className="container mx-auto flex justify-between items-center">
           <div className="flex gap-6">
-            <a href={`tel:${companyInfo.phone.replace(/\s/g, '')}`} className="flex items-center gap-2 hover:text-brand-blue transition-colors">
-              <Phone size={14} className="text-brand-blue" />
+            <a href={`tel:${companyInfo.phone.replace(/\s/g, '')}`} className="flex items-center gap-2 hover:font-medium transition-colors text-white">
+              <Phone size={14} className="text-white" />
               <span>{companyInfo.phone}</span>
             </a>
-            <a href={`mailto:${companyInfo.email}`} className="hidden md:flex items-center gap-2 hover:text-brand-blue transition-colors">
-              <Mail size={14} className="text-brand-blue" />
+            <a href={`mailto:${companyInfo.email}`} className="hidden md:flex items-center gap-2 hover:font-medium transition-colors text-white">
+              <Mail size={14} className="text-white" />
               <span>{companyInfo.email}</span>
             </a>
           </div>
-          <div className="text-xs">GST: {companyInfo.gst}</div>
+          <div className="text-xs text-white">GST: {companyInfo.gst}</div>
         </div>
       </div>
 
