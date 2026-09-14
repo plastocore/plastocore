@@ -63,17 +63,14 @@ export const Header = () => {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-20">
             <a
-              href="/"
+              href="#home"
               className="flex items-center gap-3"
-              onClick={(e) => {
-                e.preventDefault();
-                navigate('/');
-              }}
+              onClick={(e) => scrollToSection(e, '#home')}
             >
               <img src="/logo.jpg" alt="Plastocore Logo" loading="lazy" decoding="async" width="48" height="48" className="w-12 h-12 object-contain" />
               <div>
-                <h1 className="text-2xl font-bold text-brand-blue">Plastocore</h1>
-                <p className="text-xs text-brand-grey">Quality. Precision. Reliability.</p>
+                <h1 className="brand-wordmark text-2xl text-brand-blue">Plastocore</h1>
+                <p className="text-xs text-brand-grey tracking-[0.18em] uppercase">Quality. Precision. Reliability.</p>
               </div>
             </a>
 

@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-import { Send, CheckCircle2, MapPin, Phone, Mail, Clock } from 'lucide-react';
+import { FaWhatsapp, FaMapMarkerAlt, FaClock } from 'react-icons/fa';
+import { SiGmail } from 'react-icons/si';
+import { Send, CheckCircle2 } from 'lucide-react';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
 import { Textarea } from './ui/textarea';
@@ -131,8 +133,8 @@ export const Contact = () => {
               <h3 className="text-2xl font-bold text-brand-blue mb-6">Direct Contact</h3>
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-brand-blue rounded-xl flex items-center justify-center flex-shrink-0 text-white">
-                    <MapPin size={22} />
+                  <div className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 text-[#EA4335] bg-[#FDE7E5]">
+                    <FaMapMarkerAlt size={22} />
                   </div>
                   <div>
                     <p className="font-medium text-brand-blue mb-1">Location</p>
@@ -140,19 +142,33 @@ export const Contact = () => {
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-brand-blue rounded-xl flex items-center justify-center flex-shrink-0 text-white">
-                    <Phone size={22} />
+                  <div className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 text-[#25D366] bg-[#EAFBF0]">
+                    <FaWhatsapp size={22} />
                   </div>
                   <div>
                     <p className="font-medium text-brand-blue mb-1">Sales & Technical Enquiries</p>
-                    <a href={`tel:${companyInfo.phone.replace(/\s/g, '')}`} className="text-sm text-brand-grey hover:text-brand-blue block">{companyInfo.phone}</a>
-                    <a href={`tel:${companyInfo.phoneSecondary.replace(/\s/g, '')}`} className="text-sm text-brand-grey hover:text-brand-blue block">{companyInfo.phoneSecondary}</a>
+                    <a
+                      href={`https://wa.me/${companyInfo.phone.replace(/\D/g, '')}?text=${encodeURIComponent('Hello Plastocore, I want to discuss my requirement.')}`}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-sm text-brand-grey hover:text-brand-blue block"
+                    >
+                      {companyInfo.phone}
+                    </a>
+                    <a
+                      href={`https://wa.me/${companyInfo.phoneSecondary.replace(/\D/g, '')}?text=${encodeURIComponent('Hello Plastocore, I want to discuss my requirement.')}`}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-sm text-brand-grey hover:text-brand-blue block"
+                    >
+                      {companyInfo.phoneSecondary}
+                    </a>
                     <p className="text-xs text-brand-grey mt-2">Proprietor: {companyInfo.proprietorPhone}</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-brand-blue rounded-xl flex items-center justify-center flex-shrink-0 text-white">
-                    <Mail size={22} />
+                  <div className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 text-[#DB4437] bg-[#FDE9E7]">
+                    <SiGmail size={22} />
                   </div>
                   <div>
                     <p className="font-medium text-brand-blue mb-1">Email</p>
@@ -161,8 +177,8 @@ export const Contact = () => {
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-brand-blue rounded-xl flex items-center justify-center flex-shrink-0 text-white">
-                    <Clock size={22} />
+                  <div className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 text-brand-blue bg-brand-sky">
+                    <FaClock size={22} />
                   </div>
                   <div>
                     <p className="font-medium text-brand-blue mb-1">Business Hours</p>
