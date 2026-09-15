@@ -43,7 +43,7 @@ export const Header = () => {
 
   return (
     <>
-      <div className="bg-white border-b border-brand-line py-3 px-4 text-sm text-brand-grey" style={{backgroundColor: "rgb(40 114 175 / var(--tw-text-opacity, 1))"}}>
+      <div className="bg-white border-b border-brand-line py-3 px-4 text-sm text-brand-grey" style={{ backgroundColor: "rgb(40 114 175 / var(--tw-text-opacity, 1))" }}>
         <div className="container mx-auto flex justify-between items-center">
           <div className="flex gap-6">
             <a href={`tel:${companyInfo.phone.replace(/\s/g, '')}`} className="flex items-center gap-2 hover:font-medium transition-colors text-white">
@@ -67,11 +67,7 @@ export const Header = () => {
               className="flex items-center gap-3"
               onClick={(e) => scrollToSection(e, '#home')}
             >
-              <img src="/logo.jpg" alt="Plastocore Logo" loading="lazy" decoding="async" width="48" height="48" className="w-12 h-12 object-contain" />
-              <div>
-                <span className="brand-wordmark text-2xl text-brand-blue">Plastocore</span>
-                <p className="text-xs text-brand-grey tracking-[0.18em]">Quality. Precision. Reliability.</p>
-              </div>
+              <img src="/Plastocore%20name%20logo%20UPDATE.png" alt="Plastocore" loading="lazy" decoding="async" width="220" height="48" className="w-[220px] h-12 object-contain" />
             </a>
 
             <nav className="hidden lg:flex items-center gap-6">

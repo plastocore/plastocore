@@ -31,12 +31,8 @@ export const Footer = () => {
       <div className="container mx-auto px-4 pt-16 pb-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           <div>
-            <div className="flex items-center gap-3 mb-6">
-              <img src="/logo.jpg" alt="Plastocore Logo" loading="lazy" decoding="async" width="48" height="48" className="w-12 h-12 object-contain" />
-              <div>
-                <h3 className="text-xl font-bold text-white">Plastocore</h3>
-                <p className="text-xs">Quality. Precision. Reliability.</p>
-              </div>
+            <div className="mb-6 inline-flex rounded-md bg-white p-1">
+              <img src="/Plastocore%20name%20logo%20UPDATE.png" alt="Plastocore" loading="lazy" decoding="async" width="220" height="48" className="w-[220px] h-12 object-contain" />
             </div>
             <p className="text-sm leading-relaxed">
               Manufacturer of wire harnesses, cable assemblies, connectors and precision injection moulded components since 2018.
