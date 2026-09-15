@@ -49,7 +49,7 @@ export const Hero = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button onClick={scrollTo('#contact')} size="lg" className="bg-brand-blue hover:bg-brand-dark text-white text-lg px-8 py-6">
+              <Button onClick={scrollTo('#contact')} size="lg" className="text-lg px-8 py-6">
                 Enquire Now
                 <ArrowRight className="ml-2" size={20} />
               </Button>
@@ -57,7 +57,7 @@ export const Hero = () => {
                 onClick={scrollTo('#products')}
                 size="lg"
                 variant="outline"
-                className="border-2 border-brand-blue text-brand-blue hover:bg-brand-sky text-lg px-8 py-6"
+                className="text-lg px-8 py-6"
               >
                 View Products
               </Button>

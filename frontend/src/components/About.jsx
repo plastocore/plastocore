@@ -19,13 +19,13 @@ const CustomerLogo = ({ customer }) => {
       alt={`${customer.name} logo`}
       loading="lazy"
       decoding="async"
-      width="40"
-      height="40"
-      className="w-10 h-10 object-contain rounded-md"
+      width="96"
+      height="96"
+      className="w-24 h-24 object-contain rounded-md"
       onError={() => setHasLogo(false)}
     />
   ) : (
-    <span className="w-10 h-10 rounded-md bg-brand-sky text-brand-blue font-bold text-sm flex items-center justify-center" aria-hidden="true">
+    <span className="w-24 h-24 rounded-md bg-brand-sky text-brand-blue font-bold text-lg flex items-center justify-center" aria-hidden="true">
       {initials}
     </span>
   );

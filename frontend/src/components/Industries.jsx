@@ -20,9 +20,9 @@ export const Industries = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
           {industries.map((industry) => (
-            <Card key={industry.title} className="border-brand-line shadow-sm bg-white">
+            <Card key={industry.title} className="h-full border-brand-line shadow-sm bg-white">
               <CardContent className="p-6">
                 <h3 className="font-bold text-brand-blue mb-3">{industry.title}</h3>
                 <ul className="space-y-1.5">

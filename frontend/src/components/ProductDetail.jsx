@@ -52,7 +52,7 @@ export const ProductDetail = () => {
         <div className="text-center">
           <PackageIcon className="mx-auto mb-4 text-brand-grey" size={48} />
           <p className="text-brand-grey">Product not found</p>
-          <Button onClick={() => navigate('/')} className="mt-4 bg-brand-blue hover:bg-brand-dark text-white">
+          <Button onClick={() => navigate('/')} className="mt-4">
             Back to Home
           </Button>
         </div>
@@ -138,7 +138,7 @@ export const ProductDetail = () => {
                   <p className="text-sm text-brand-grey bg-brand-muted rounded-lg p-4">
                     Our team will review your requirement and get back with a suitable solution.
                   </p>
-                  <Button type="submit" size="lg" className="w-full bg-brand-blue hover:bg-brand-dark text-white h-12">
+                  <Button type="submit" size="lg" className="w-full h-12">
                     Request a Quote
                   </Button>
                 </form>

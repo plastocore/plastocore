@@ -1,4 +1,5 @@
 import React from 'react';
+import { Button } from './ui/button';
 
 export class ErrorBoundary extends React.Component {
   state = { hasError: false };
@@ -18,13 +19,13 @@ export class ErrorBoundary extends React.Component {
           <div className="text-center">
             <h1 className="text-2xl font-bold text-brand-blue mb-3">Something went wrong</h1>
             <p className="text-brand-grey mb-6">Please refresh the page to continue browsing Plastocore.</p>
-            <button
+            <Button
               type="button"
               onClick={() => window.location.reload()}
-              className="bg-brand-blue hover:bg-brand-dark text-white px-6 py-3 rounded-lg font-semibold"
+              className="px-6 py-3 font-semibold"
             >
               Refresh Page
-            </button>
+            </Button>
           </div>
         </main>
       );

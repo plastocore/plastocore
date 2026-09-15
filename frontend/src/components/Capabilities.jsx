@@ -48,11 +48,11 @@ export const Capabilities = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16 items-stretch">
           {capabilities.map((capability, index) => {
             const Icon = icons[index] || Factory;
             return (
-              <Card key={capability.title} className="bg-white border-brand-line shadow-sm">
+              <Card key={capability.title} className="h-full bg-white border-brand-line shadow-sm">
                 <CardContent className="p-8">
                   <div className="w-14 h-14 bg-brand-sky rounded-xl flex items-center justify-center mb-5">
                     <Icon className="text-brand-blue" size={26} />

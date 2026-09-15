@@ -120,7 +120,7 @@ export const Contact = () => {
                       placeholder="Share drawing details, BOM, specifications or application notes."
                     />
                   </div>
-                  <Button type="submit" disabled={isSubmitting} className="w-full bg-brand-blue hover:bg-brand-dark text-white h-12 text-lg">
+                  <Button type="submit" disabled={isSubmitting} className="w-full h-12 text-lg">
                     {isSubmitting ? 'Sending...' : 'Submit Enquiry'}
                   </Button>
                 </form>

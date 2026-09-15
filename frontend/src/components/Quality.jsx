@@ -90,7 +90,7 @@ export const Quality = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {infrastructure.map((block) => (
               <div key={block.title} className="bg-white border border-brand-line rounded-2xl p-6">
-                <h4 className="font-bold text-brand-blue mb-3">{block.title}</h4>
+                <h4 className="text-lg font-bold text-brand-blue mb-3">{block.title}</h4>
                 <ul className="space-y-1.5">
                   {block.items.map((item) => (
                     <li key={item} className="text-sm text-brand-grey">• {item}</li>

@@ -43,7 +43,7 @@ export const Header = () => {
 
   return (
     <>
-      <div className="bg-white border-b border-brand-line py-2 px-4 text-sm text-brand-grey" style={{backgroundColor: "rgb(40 114 175 / var(--tw-text-opacity, 1))"}}>
+      <div className="bg-white border-b border-brand-line py-3 px-4 text-sm text-brand-grey" style={{backgroundColor: "rgb(40 114 175 / var(--tw-text-opacity, 1))"}}>
         <div className="container mx-auto flex justify-between items-center">
           <div className="flex gap-6">
             <a href={`tel:${companyInfo.phone.replace(/\s/g, '')}`} className="flex items-center gap-2 hover:font-medium transition-colors text-white">
@@ -69,8 +69,8 @@ export const Header = () => {
             >
               <img src="/logo.jpg" alt="Plastocore Logo" loading="lazy" decoding="async" width="48" height="48" className="w-12 h-12 object-contain" />
               <div>
-                <h1 className="brand-wordmark text-2xl text-brand-blue">Plastocore</h1>
-                <p className="text-xs text-brand-grey tracking-[0.18em] uppercase">Quality. Precision. Reliability.</p>
+                <span className="brand-wordmark text-2xl text-brand-blue">Plastocore</span>
+                <p className="text-xs text-brand-grey tracking-[0.18em]">Quality. Precision. Reliability.</p>
               </div>
             </a>
 
@@ -89,7 +89,7 @@ export const Header = () => {
             </nav>
 
             <div className="hidden lg:flex items-center gap-4">
-              <Button onClick={(e) => scrollToSection(e, '#contact')} className="bg-brand-blue hover:bg-brand-dark text-white shadow-sm">
+              <Button onClick={(e) => scrollToSection(e, '#contact')}>
                 Enquire Now
               </Button>
             </div>
@@ -116,7 +116,7 @@ export const Header = () => {
                   {link.name}
                 </a>
               ))}
-              <Button onClick={(e) => scrollToSection(e, '#contact')} className="bg-brand-blue hover:bg-brand-dark text-white w-full">
+              <Button onClick={(e) => scrollToSection(e, '#contact')} className="w-full">
                 Enquire Now
               </Button>
             </nav>

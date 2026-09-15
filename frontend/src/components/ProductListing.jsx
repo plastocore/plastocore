@@ -24,7 +24,7 @@ export const ProductListing = () => {
         <div className="text-center">
           <Package className="mx-auto mb-4 text-brand-grey" size={48} />
           <p className="text-brand-grey">Category not found</p>
-          <Button onClick={() => navigate('/')} className="mt-4 bg-brand-blue hover:bg-brand-dark text-white">
+          <Button onClick={() => navigate('/')} className="mt-4">
             Back to Home
           </Button>
         </div>

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight, Package } from 'lucide-react';
 import { Card, CardContent } from './ui/card';
+import { Button } from './ui/button';
 import { productCategories } from '../data/mockData';
 import { useNavigate } from 'react-router-dom';
 
@@ -104,12 +105,12 @@ export const ProductCategories = () => {
 
         <div className="text-center mt-12">
           <p className="text-brand-grey mb-4">Have a drawing, sample or specific requirement?</p>
-          <button
-            className="bg-brand-blue hover:bg-brand-dark text-white px-8 py-3 rounded-lg font-semibold transition-colors"
+          <Button
+            className="px-8 py-3 font-semibold"
             onClick={() => document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })}
           >
             Send Your Requirement
-          </button>
+          </Button>
         </div>
       </div>
     </section>
