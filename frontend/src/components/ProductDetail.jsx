@@ -73,7 +73,7 @@ export const ProductDetail = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div>
             <Card className="border border-brand-line overflow-hidden">
-              <img src={product.image} alt={product.name} loading="lazy" decoding="async" width="800" height="420" className="w-full h-[420px] object-cover" />
+              <img src={product.image} alt={product.name} loading="lazy" decoding="async" width="800" height="420" className="w-full h-[330px] md:h-[570px] object-fill md:object-cover" />
             </Card>
             <Card className="mt-6 border-brand-line">
               <CardContent className="p-6">

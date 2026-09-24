@@ -61,7 +61,7 @@ export const productCategories = [
     name: "Data & Charging Cables",
     description:
       "USB, OTG and multi-in-one charging and data cables for electronics, OEM and industrial connectivity.",
-    image: "/images/data-cables.jpg",
+    image: "/images/data cables.webp",
     slug: "data-charging-cables"
   },
   {
@@ -69,7 +69,7 @@ export const productCategories = [
     name: "Wire Harnesses",
     description:
       "Industrial, automotive, appliance and electronic harnesses built to customer drawings, gauge, length and connector type.",
-    image: "/images/equipment-cables.jpg",
+    image: "/images/wire harness.webp",
     slug: "wire-harnesses"
   },
   {
@@ -77,7 +77,7 @@ export const productCategories = [
     name: "Cable Assemblies",
     description:
       "Equipment cables, scanner cables, power cords, patch cords, spiral cords and solar inverter harnessing.",
-    image: "/images/equipment-cables.jpg",
+    image: "/images/cable assemblies.webp",
     slug: "cable-assemblies"
   },
   // {
@@ -109,27 +109,27 @@ export const productCategories = [
     name: "Injection Moulding",
     description:
       "Precision plastic components including connector housings, enclosures, clips, gears and custom parts.",
-    image: "/images/injection-moulding.jpg",
+    image: "/images/injection moulding.webp",
     slug: "injection-moulding"
   }
 ];
 
 export const productsByCategory = {
   "data-charging-cables": [
-    { id: 101, name: "USB A to Type-C", description: "Charging + data cable for modern USB-C devices.", image: "/images/data-cables.jpg", category: "Data & Charging Cables", categorySlug: "data-charging-cables", inStock: true, specifications: { Function: "Charging + Data", Type: "USB A to Type-C", Customization: "Length, colour and OEM marking" } },
-    { id: 102, name: "USB A to Micro USB", description: "Charging + data cable for Micro USB equipment and accessories.", image: "/images/data-cables.jpg", category: "Data & Charging Cables", categorySlug: "data-charging-cables", inStock: true, specifications: { Function: "Charging + Data", Type: "USB A to Micro USB" } },
-    { id: 103, name: "USB A to Lightning", description: "Charging + data cable for Lightning-compatible devices.", image: "/images/data-cables.jpg", category: "Data & Charging Cables", categorySlug: "data-charging-cables", inStock: true, specifications: { Function: "Charging + Data", Type: "USB A to Lightning" } },
-    { id: 104, name: "Type-C to Type-C", description: "Charging + data cable for USB-C to USB-C connections.", image: "/images/data-cables.jpg", category: "Data & Charging Cables", categorySlug: "data-charging-cables", inStock: true, specifications: { Function: "Charging + Data", Type: "Type-C to Type-C" } },
-    { id: 105, name: "Type-C to Lightning", description: "Charging + data cable for Type-C to Lightning applications.", image: "/images/data-cables.jpg", category: "Data & Charging Cables", categorySlug: "data-charging-cables", inStock: true, specifications: { Function: "Charging + Data", Type: "Type-C to Lightning" } },
-    { id: 106, name: "Micro USB to Type-C", description: "Charging + data adapter cable for mixed connector systems.", image: "/images/data-cables.jpg", category: "Data & Charging Cables", categorySlug: "data-charging-cables", inStock: true, specifications: { Function: "Charging + Data", Type: "Micro USB to Type-C" } },
-    { id: 107, name: "USB A to Mini USB", description: "Charging + data cable for Mini USB peripherals.", image: "/images/data-cables.jpg", category: "Data & Charging Cables", categorySlug: "data-charging-cables", inStock: true, specifications: { Function: "Charging + Data", Type: "USB A to Mini USB" } },
-    { id: 108, name: "USB Printer Cable", description: "Data cable for printers and similar peripherals.", image: "/images/data-cables.jpg", category: "Data & Charging Cables", categorySlug: "data-charging-cables", inStock: true, specifications: { Function: "Data Cable", Type: "USB A to Printer" } },
-    { id: 109, name: "USB A to USB B Cable", description: "Standard USB A to USB B data cable.", image: "/images/data-cables.jpg", category: "Data & Charging Cables", categorySlug: "data-charging-cables", inStock: true, specifications: { Function: "Data Cable", Type: "USB A to USB B" } },
-    { id: 110, name: "USB 2.0 Data Cable", description: "High-speed data transfer cable, 100% tested for performance.", image: "/images/data-cables.jpg", category: "Data & Charging Cables", categorySlug: "data-charging-cables", inStock: true, specifications: { Function: "High Speed Data Transfer", Standard: "USB 2.0" } },
-    { id: 111, name: "USB 3.0 Data Cable", description: "Super-speed data transfer cable for demanding applications.", image: "/images/data-cables.jpg", category: "Data & Charging Cables", categorySlug: "data-charging-cables", inStock: true, specifications: { Function: "Super Speed Data Transfer", Standard: "USB 3.0" } },
-    { id: 112, name: "2-in-1 Charging Cable", description: "Multi-connector charging cable with Micro + Lightning.", image: "/images/data-cables.jpg", category: "Data & Charging Cables", categorySlug: "data-charging-cables", inStock: true, specifications: { Connectors: "Micro + Lightning", Customization: "Custom length available" } },
-    { id: 113, name: "3-in-1 Charging Cable", description: "Micro + Type-C + Lightning charging cable.", image: "/images/data-cables.jpg", category: "Data & Charging Cables", categorySlug: "data-charging-cables", inStock: true, specifications: { Connectors: "Micro + Type-C + Lightning" } },
-    { id: 114, name: "4-in-1 Charging Cable", description: "Micro + Type-C + Lightning + USB A charging cable.", image: "/images/data-cables.jpg", category: "Data & Charging Cables", categorySlug: "data-charging-cables", inStock: true, specifications: { Connectors: "Micro + Type-C + Lightning + USB A" } }
+    { id: 101, name: "USB A to Type-C", description: "Charging + data cable for modern USB-C devices.", image: "/images/products/data-charging-cables/USBA-TypeC.webp", category: "Data & Charging Cables", categorySlug: "data-charging-cables", inStock: true, specifications: { Function: "Charging + Data", Type: "USB A to Type-C", Customization: "Length, colour and OEM marking" } },
+    { id: 102, name: "USB A to Micro USB", description: "Charging + data cable for Micro USB equipment and accessories.", image: "/images/products/data-charging-cables/USBA-MicroUSB.webp", category: "Data & Charging Cables", categorySlug: "data-charging-cables", inStock: true, specifications: { Function: "Charging + Data", Type: "USB A to Micro USB" } },
+    { id: 103, name: "USB A to Lightning", description: "Charging + data cable for Lightning-compatible devices.", image: "/images/products/data-charging-cables/USBA-Lightning.webp", category: "Data & Charging Cables", categorySlug: "data-charging-cables", inStock: true, specifications: { Function: "Charging + Data", Type: "USB A to Lightning" } },
+    { id: 104, name: "Type-C to Type-C", description: "Charging + data cable for USB-C to USB-C connections.", image: "/images/products/data-charging-cables/TypeC-TypeC.webp", category: "Data & Charging Cables", categorySlug: "data-charging-cables", inStock: true, specifications: { Function: "Charging + Data", Type: "Type-C to Type-C" } },
+    { id: 105, name: "Type-C to Lightning", description: "Charging + data cable for Type-C to Lightning applications.", image: "/images/products/data-charging-cables/TypeC-lightning.webp", category: "Data & Charging Cables", categorySlug: "data-charging-cables", inStock: true, specifications: { Function: "Charging + Data", Type: "Type-C to Lightning" } },
+    { id: 106, name: "Micro USB to Type-C", description: "Charging + data adapter cable for mixed connector systems.", image: "/images/products/data-charging-cables/MicroUSB-TypeC.webp", category: "Data & Charging Cables", categorySlug: "data-charging-cables", inStock: true, specifications: { Function: "Charging + Data", Type: "Micro USB to Type-C" } },
+    { id: 107, name: "USB A to Mini USB", description: "Charging + data cable for Mini USB peripherals.", image: "/images/products/data-charging-cables/USBA-MiniUSB.webp", category: "Data & Charging Cables", categorySlug: "data-charging-cables", inStock: true, specifications: { Function: "Charging + Data", Type: "USB A to Mini USB" } },
+    { id: 108, name: "USB Printer Cable", description: "Data cable for printers and similar peripherals.", image: "/images/products/data-charging-cables/USBPrinter.webp", category: "Data & Charging Cables", categorySlug: "data-charging-cables", inStock: true, specifications: { Function: "Data Cable", Type: "USB A to Printer" } },
+    { id: 109, name: "USB A to USB B Cable", description: "Standard USB A to USB B data cable.", image: "/images/products/data-charging-cables/USBA-USBB.webp", category: "Data & Charging Cables", categorySlug: "data-charging-cables", inStock: true, specifications: { Function: "Data Cable", Type: "USB A to USB B" } },
+    { id: 110, name: "USB 2.0 Data Cable", description: "High-speed data transfer cable, 100% tested for performance.", image: "/images/products/data-charging-cables/USB2.webp", category: "Data & Charging Cables", categorySlug: "data-charging-cables", inStock: true, specifications: { Function: "High Speed Data Transfer", Standard: "USB 2.0" } },
+    { id: 111, name: "USB 3.0 Data Cable", description: "Super-speed data transfer cable for demanding applications.", image: "/images/products/data-charging-cables/USB3.webp", category: "Data & Charging Cables", categorySlug: "data-charging-cables", inStock: true, specifications: { Function: "Super Speed Data Transfer", Standard: "USB 3.0" } },
+    { id: 112, name: "2-in-1 Charging Cable", description: "Multi-connector charging cable with Micro + Lightning.", image: "/images/products/data-charging-cables/2in1.webp", category: "Data & Charging Cables", categorySlug: "data-charging-cables", inStock: true, specifications: { Connectors: "Micro + Lightning", Customization: "Custom length available" } },
+    { id: 113, name: "3-in-1 Charging Cable", description: "Micro + Type-C + Lightning charging cable.", image: "/images/products/data-charging-cables/3in1.webp", category: "Data & Charging Cables", categorySlug: "data-charging-cables", inStock: true, specifications: { Connectors: "Micro + Type-C + Lightning" } },
+    { id: 114, name: "4-in-1 Charging Cable", description: "Micro + Type-C + Lightning + USB A charging cable.", image: "/images/products/data-charging-cables/4in1.webp", category: "Data & Charging Cables", categorySlug: "data-charging-cables", inStock: true, specifications: { Connectors: "Micro + Type-C + Lightning + USB A" } }
   ],
   "wire-harnesses": [
     { id: 201, name: "Industrial Wire Harnesses", description: "Application-specific industrial harnesses with custom wire gauge, length, insulation and connectors.", image: "/images/equipment-cables.jpg", category: "Wire Harnesses", categorySlug: "wire-harnesses", inStock: true, specifications: { Customization: "As per drawing / BOM", Testing: "100% continuity tested" } },

@@ -29,13 +29,13 @@ export const ProductCategories = () => {
       className="group hover:shadow-lg transition-all duration-300 border border-brand-line shadow-sm overflow-hidden cursor-pointer bg-white"
       onClick={() => navigate(`/products/${category.slug}`)}
     >
-      <div className="relative h-56 overflow-hidden bg-brand-muted">
+      <div className="relative h-[24rem] overflow-hidden bg-brand-muted">
         <img
           src={category.image}
           alt={category.name}
           loading="lazy"
           decoding="async"
-          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+          className="w-full h-full object-fill md:object-cover group-hover:scale-105 transition-transform duration-500"
         />
       </div>
       <CardContent className="p-6">
@@ -66,7 +66,7 @@ export const ProductCategories = () => {
         </div>
 
         <div className="md:hidden">
-          <div className="relative px-8">
+          <div className="relative px-4">
             {renderCategoryCard(activeCategory)}
             <button
               type="button"

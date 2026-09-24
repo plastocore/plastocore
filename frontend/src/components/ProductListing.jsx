@@ -59,8 +59,8 @@ export const ProductListing = () => {
               className="group hover:shadow-lg transition-all duration-300 border border-brand-line overflow-hidden cursor-pointer"
               onClick={() => navigate(`/product/${product.id}`)}
             >
-              <div className="relative h-52 overflow-hidden bg-brand-muted">
-                <img src={product.image} alt={product.name} loading="lazy" decoding="async" width="640" height="416" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              <div className="relative h-[20rem] md:h-[24rem] overflow-hidden bg-brand-muted">
+                <img src={product.image} alt={product.name} loading="lazy" decoding="async" width="640" height="416" className="w-full h-full object-fill md:object-cover group-hover:scale-105 transition-transform duration-500" />
               </div>
               <CardContent className="p-6">
                 <h3 className="text-xl font-bold text-brand-blue mb-3">{product.name}</h3>

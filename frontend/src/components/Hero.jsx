@@ -29,7 +29,7 @@ export const Hero = () => {
               </span>
             </div> */}
 
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-brand-blue mb-6 leading-tight">
+          <h1 className="text-2xl md:text-5xl lg:text-6xl font-bold text-brand-blue mb-6 leading-tight">
             {companyInfo.tagline}
           </h1>
           <p className="text-lg text-black mb-4 leading-relaxed ">
