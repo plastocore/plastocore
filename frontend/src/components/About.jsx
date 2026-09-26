@@ -2,6 +2,7 @@ import React from 'react';
 import { Building2, Award, MapPin, Phone, Mail } from 'lucide-react';
 import { Card, CardContent } from './ui/card';
 import { companyInfo, customers, certifications } from '../data/mockData';
+import { useCertificate } from '../context/CertificateContext';
 
 const CustomerLogo = ({ customer }) => {
   const [hasLogo, setHasLogo] = React.useState(true);
@@ -32,6 +33,8 @@ const CustomerLogo = ({ customer }) => {
 };
 
 export const About = () => {
+  const { openCertificate } = useCertificate();
+
   return (
     <section id="about" className="py-20 bg-white">
       <div className="container mx-auto px-4">
@@ -57,13 +60,25 @@ export const About = () => {
             </div>
 
             <div className="bg-brand-muted rounded-2xl p-6 mb-8">
-              <h3 className="font-bold text-brand-blue mb-4">Certifications & Compliance</h3>
+              <div className="flex items-center justify-between mb-4">
+                <h3 className="font-bold text-brand-blue">Certifications & Compliance</h3>
+                <span className="text-xs text-brand-blue bg-brand-sky px-2.5 py-1 rounded-full font-medium">Click to view document</span>
+              </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {certifications.map((cert) => (
-                  <div key={cert.name} className="flex items-start gap-2">
-                    <Award className="text-brand-blue flex-shrink-0 mt-0.5" size={16} />
-                    <span className="text-sm text-brand-grey">{cert.name}</span>
-                  </div>
+                  <button
+                    key={cert.name}
+                    onClick={() => openCertificate(cert)}
+                    className="flex items-start gap-3 p-3 bg-white hover:bg-brand-sky/30 border border-brand-line rounded-xl text-left transition-all group w-full shadow-sm hover:shadow"
+                  >
+                    <div className="w-8 h-8 rounded-lg bg-brand-sky flex items-center justify-center text-brand-blue flex-shrink-0 mt-0.5 group-hover:bg-brand-blue group-hover:text-white transition-colors">
+                      <Award size={16} />
+                    </div>
+                    <div>
+                      <span className="text-sm font-bold text-brand-blue group-hover:underline block">{cert.name}</span>
+                      <span className="text-xs text-brand-grey line-clamp-1">{cert.detail}</span>
+                    </div>
+                  </button>
                 ))}
               </div>
             </div>

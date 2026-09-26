@@ -2,10 +2,12 @@ import React from 'react';
 import { Mail, Phone, MapPin, ArrowUp } from 'lucide-react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { companyInfo, productCategories, certifications } from '../data/mockData';
+import { useCertificate } from '../context/CertificateContext';
 
 export const Footer = () => {
   const navigate = useNavigate();
   const location = useLocation();
+  const { openCertificate } = useCertificate();
 
   const scrollToTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
 
@@ -95,12 +97,17 @@ export const Footer = () => {
         </div>
 
         <div className="border-t border-white/20 pt-8 mb-8">
-          <div className="flex flex-wrap items-center justify-center gap-8 text-sm">
+          <div className="flex flex-wrap items-center justify-center gap-6 text-sm">
             {certifications.slice(0, 4).map((cert) => (
-              <div key={cert.name} className="flex items-center gap-2">
-                <div className="w-2 h-2 bg-brand-sky rounded-full"></div>
-                <span>{cert.name}</span>
-              </div>
+              <button
+                key={cert.name}
+                onClick={() => openCertificate(cert)}
+                className="flex items-center gap-2 hover:text-brand-sky transition-colors cursor-pointer group"
+                title="Click to view certificate"
+              >
+                <div className="w-2 h-2 bg-brand-sky rounded-full group-hover:scale-125 transition-transform"></div>
+                <span className="hover:underline underline-offset-4">{cert.name}</span>
+              </button>
             ))}
           </div>
         </div>

@@ -6,6 +6,7 @@ import { Hero } from './components/Hero';
 import { SEO } from './components/SEO';
 import { Toaster } from './components/ui/sonner';
 import { ErrorBoundary } from './components/ErrorBoundary';
+import { CertificateProvider } from './context/CertificateContext';
 import './App.css';
 
 const ProductListing = lazy(() => import('./components/ProductListing').then(({ ProductListing }) => ({ default: ProductListing })));
@@ -78,20 +79,22 @@ function App() {
   return (
     <HelmetProvider>
       <ErrorBoundary>
-        <div className="App">
-          <Header />
-          <Suspense fallback={<RouteFallback />}>
-            <Routes>
-              <Route path="/" element={<HomePage />} />
-              <Route path="/products/:categorySlug" element={<ProductListing />} />
-              <Route path="/product/:productId" element={<ProductDetail />} />
-            </Routes>
-          </Suspense>
-          <Suspense fallback={null}>
-            <Footer />
-          </Suspense>
-          <Toaster position="top-right" />
-        </div>
+        <CertificateProvider>
+          <div className="App">
+            <Header />
+            <Suspense fallback={<RouteFallback />}>
+              <Routes>
+                <Route path="/" element={<HomePage />} />
+                <Route path="/products/:categorySlug" element={<ProductListing />} />
+                <Route path="/product/:productId" element={<ProductDetail />} />
+              </Routes>
+            </Suspense>
+            <Suspense fallback={null}>
+              <Footer />
+            </Suspense>
+            <Toaster position="top-right" />
+          </div>
+        </CertificateProvider>
       </ErrorBoundary>
     </HelmetProvider>
   );

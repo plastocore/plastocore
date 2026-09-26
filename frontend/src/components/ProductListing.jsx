@@ -18,14 +18,24 @@ export const ProductListing = () => {
     setProducts(productsByCategory[categorySlug] || []);
   }, [categorySlug]);
 
+  const handleBackToProducts = () => {
+    navigate('/');
+    setTimeout(() => {
+      const element = document.querySelector('#products');
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 120);
+  };
+
   if (!category) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-white">
         <div className="text-center">
           <Package className="mx-auto mb-4 text-brand-grey" size={48} />
           <p className="text-brand-grey">Category not found</p>
-          <Button onClick={() => navigate('/')} className="mt-4">
-            Back to Home
+          <Button onClick={handleBackToProducts} className="mt-4">
+            Back to Products
           </Button>
         </div>
       </div>
@@ -36,9 +46,9 @@ export const ProductListing = () => {
     <div className="min-h-screen bg-white py-8">
       <div className="container mx-auto px-4">
         <div className="mb-8">
-          <Button variant="ghost" onClick={() => navigate('/')} className="text-brand-grey hover:text-brand-blue p-0">
+          <Button variant="ghost" onClick={handleBackToProducts} className="text-brand-grey hover:text-brand-blue p-0">
             <ArrowLeft size={20} className="mr-2" />
-            Back to Home
+            Back to Products
           </Button>
         </div>
 

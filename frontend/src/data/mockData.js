@@ -301,18 +301,22 @@ export const industries = [
 export const certifications = [
   {
     name: "ISO 9001:2015",
-    detail: "Quality Management System focused on consistent processes, quality control and continual improvement."
+    detail: "Quality Management System focused on consistent processes, quality control and continual improvement.",
+    file: "/PLASTOCORE-9001 ISO25-26.pdf"
   },
   {
     name: "GST Registration",
-    detail: "GSTIN 24AJPPM2507C1ZJ"
+    detail: "GSTIN 24AJPPM2507C1ZJ",
+    file: "/UPDATED GST CERTIFICATE.pdf"
   },
   {
     name: "IEC Registration",
-    detail: "Importer-Exporter Code AJPPM2507C, issued 18.05.2019"
+    detail: "Importer-Exporter Code AJPPM2507C, issued 18.05.2019",
+    file: "/IEC_Certificate.pdf"
   },
   {
     name: "MSME Registration",
-    detail: "Registered manufacturing enterprise."
+    detail: "Registered manufacturing enterprise.",
+    file: "/MSME.pdf"
   },
 ];
