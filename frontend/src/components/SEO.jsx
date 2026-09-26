@@ -20,7 +20,7 @@ export const SEO = ({
     email: companyInfo.email,
     address: {
       "@type": "PostalAddress",
-      streetAddress: "P/843, Om Industrial Estate, Sola-Santej Road, Rakanpur",
+      streetAddress: "843/P3, Om Industrial Estate, Sola-Santej Road, Rakanpur",
       addressLocality: "Gandhinagar",
       addressRegion: "Gujarat",
       postalCode: "382721",

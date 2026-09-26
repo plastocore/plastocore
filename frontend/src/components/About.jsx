@@ -35,7 +35,7 @@ export const About = () => {
   return (
     <section id="about" className="py-20 bg-white">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 md:gap-16 items-start">
           <div>
             <div className="inline-flex items-center gap-2 bg-brand-sky px-4 py-2 rounded-full mb-6">
               <Building2 className="text-brand-blue" size={18} />
@@ -71,7 +71,7 @@ export const About = () => {
 
           <div>
             <div className="relative mb-8 rounded-2xl overflow-hidden border border-brand-line">
-              <img src="/images/injection-moulding.jpg" alt="Plastocore manufacturing" loading="lazy" decoding="async" width="640" height="320" className="w-full h-80 object-cover" />
+              <img src="/images/about.webp" alt="Plastocore manufacturing" loading="lazy" decoding="async" width="640" height="320" className="w-full h-[auto] object-cover" />
             </div>
             <Card className="border-brand-line bg-white">
               <CardContent className="p-6">
