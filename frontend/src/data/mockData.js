@@ -315,12 +315,4 @@ export const certifications = [
     name: "MSME Registration",
     detail: "Registered manufacturing enterprise."
   },
-  {
-    name: "RoHS Compliance",
-    detail: "Products and materials can be supplied in accordance with applicable RoHS requirements, wherever specified by the customer."
-  },
-  {
-    name: "REACH Compliance",
-    detail: "Material compliance can be supported as required for applicable customer and market requirements."
-  }
 ];
